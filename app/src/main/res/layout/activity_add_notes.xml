@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AddNotesActivity">
+
+    <TextView
+        android:id="@+id/addNoteheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="Add Notes..."
+        android:textColor="@color/orange"
+        android:fontFamily="@font/poppins"
+        android:textSize="26sp" />
+
+    <ImageView
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:src="@drawable/baseline_done_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/addNoteheading"
+        android:layout_marginEnd="6dp"
+
+        />
+
+    <EditText
+        android:id="@+id/editTextView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="20dp"
+        android:fontFamily="@font/poppins"
+        android:padding="12dp"
+        android:layout_below="@+id/addNoteheading"
+        android:hint="Enter the title"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        />
+
+    <EditText
+        android:id="@+id/editTextViewtwo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="20dp"
+        android:gravity="top"
+        android:padding="12dp"
+        android:layout_below="@+id/editTextView"
+        android:hint="Enter the description"
+        android:background="@drawable/orange_border"
+        android:layout_marginTop="12dp"
+
+        />
+
+</RelativeLayout>
